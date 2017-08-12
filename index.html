@@ -8,16 +8,18 @@
 </head>
 <body>
 	
+	<!--创建 dom 元素-->
 	<div id="qrcode"></div>
+	
 	<script type="text/javascript">
-
+	//创建 QRcode 对象 
 	var qrcode = new QRCode('qrcode',{
 		//text:'http://www.boolib.com',
-		width:256,
-		height:256,
-		colorDark:"#000000",
-		colorLight:"#ffffff",
-		correctLevel : QRCode.CorrectLevel.H
+		width:256, 	//设置宽度
+		height:256,	//设置高度
+		colorDark:"#000000",	//设置前景色
+		colorLight:"#ffffff",	//设置背景色
+		correctLevel : QRCode.CorrectLevel.H	//设置兼容度
 	});
 	qrcode.makeCode('http://www.boolib.com')
 	</script>
